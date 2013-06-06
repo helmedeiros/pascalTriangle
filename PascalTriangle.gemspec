@@ -2,7 +2,6 @@
  
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'pascalTriangle/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "pascalTriangle"
@@ -11,6 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["helio.cabralmedeiros@gmail.com"]
   spec.description   = %q{A implementation to pascal triangle problem.}
   spec.summary       = %q{A implementation to pascal triangle problem.}
+  spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
