@@ -45,6 +45,8 @@ END_OUTPUT
   end
   
   def test_find
-    assert_equal([1, 5, 10, 10, 5, 1 ], @tri.find { |row| row.any? { |n| n > 9 }  })
+    assert_equal(
+          [1, 5, 10, 10, 5, 1 ], 
+          @tri.find { |row| row.any? { |n| n > 9 }  })
   end
 end
