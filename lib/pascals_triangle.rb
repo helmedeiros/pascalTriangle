@@ -1,4 +1,6 @@
 class PascalsTriangle
+  include Enumerable
+  
   def initialize
     @last_row = nil
   end
