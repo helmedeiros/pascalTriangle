@@ -5,7 +5,6 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "pascalTriangle"
-  spec.version       = PascalTriangle::VERSION
   spec.authors       = ["Hélio Medeiros"]
   spec.email         = ["helio.cabralmedeiros@gmail.com"]
   spec.description   = %q{A implementation to pascal triangle problem.}
