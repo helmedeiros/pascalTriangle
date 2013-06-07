@@ -1,4 +1,5 @@
 require "test/unit"
+require 'enumerator'
 
 require "pascals_triangle"
 
@@ -17,36 +18,36 @@ class TestPascalsTriangle < Test::Unit::TestCase
 1     9    36    84    126   126   84    36     9     1
 END_OUTPUT
 
-    @rows = @output.map { |line| line.scan(/\d+/).map { |n| n.to_i  }  }
+    @rows = @output.each_line.map { |line| line.scan(/\d+/).map { |n| n.to_i  }  }
     @rows.each do |row|
-      puts "[#{row}]"
-    end
-  
-    @tri = PascalsTriangle.new
-  end  
-  
-  def test_next_row
-    @rows.each do |row|
-      assert_equal(row, @tri.next_row)
-    end
-  end
-  
-  def test_each
-    @tri.each(1) do |row|
-      assert_equal(@rows.shift, row)
-    end
-    
-     @tri.each(9) do |row|
-       puts row
-       @temp = @rows.shift
-       puts "#{@temp}"  
-        assert_equal(@temp, row)
+          puts "[#{row}]"
+        end
+
+        @tri = PascalsTriangle.new
+      end  
+
+      def test_next_row
+        @rows.each do |row|
+          assert_equal(row, @tri.next_row)
+        end
       end
-  end
-  
-  def test_find
-    assert_equal(
-          [1, 5, 10, 10, 5, 1 ], 
-          @tri.find { |row| row.any? { |n| n > 9 }  })
-  end
-end
+
+      def test_each
+        @tri.each(1) do |row|
+          assert_equal(@rows.shift, row)
+        end
+
+         @tri.each(9) do |row|
+           puts row
+           @temp = @rows.shift
+           puts "#{@temp}"  
+            assert_equal(@temp, row)
+          end
+      end
+
+      def test_find
+        assert_equal(
+              [1, 5, 10, 10, 5, 1 ], 
+              @tri.find { |row| row.any? { |n| n > 9 }  })
+      end
+    end
