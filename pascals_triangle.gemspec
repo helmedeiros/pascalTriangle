@@ -2,11 +2,11 @@
  
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-˜require 'PascalTriangle/version'
+require 'pascals_triangle/version'
 
-Gem::Specification.new do |spec|
-  spec.name          = "PascalTriangle"
-  spec.version       = PascalTriangle::VERSION
+Gem::Specification.new do |spec|  
+  spec.name          = "pascals_triangle"
+  spec.version       = PascalsTriangle::VERSION
   spec.authors       = ["Helio Medeiros"]
   spec.email         = ["helio.cabralmedeiros@gmail.com"]
   spec.description   = %q{Solve to PascalTriangle problem.}
