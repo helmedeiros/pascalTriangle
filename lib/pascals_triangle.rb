@@ -1,4 +1,4 @@
-require 'PascalTriangle/version'
+require 'pascals_triangle/version'
 
 class PascalsTriangle
   include Enumerable
