@@ -1,3 +1,5 @@
+require 'PascalTriangle/version'
+
 class PascalsTriangle
   include Enumerable
   

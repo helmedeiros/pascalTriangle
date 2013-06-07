@@ -2,13 +2,16 @@
  
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+˜require 'PascalTriangle/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "pascalTriangle"
-  spec.authors       = ["Hélio Medeiros"]
+  spec.name          = "PascalTriangle"
+  spec.version       = PascalTriangle::VERSION
+  spec.authors       = ["Helio Medeiros"]
   spec.email         = ["helio.cabralmedeiros@gmail.com"]
-  spec.description   = %q{A implementation to pascal triangle problem.}
-  spec.summary       = %q{A implementation to pascal triangle problem.}
+  spec.description   = %q{Solve to PascalTriangle problem.}
+  spec.summary       = %q{A PascalTriangle solution.}
+  spec.homepage      = "https://github.com/helmedeiros/pascalTriangle"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
