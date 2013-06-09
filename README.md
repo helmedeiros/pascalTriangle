@@ -1,4 +1,7 @@
-My Pascal Triangle [![Build Status](https://travis-ci.org/helmedeiros/pascalTriangle.png?branch=fixingErrors)](https://travis-ci.org/helmedeiros/pascalTriangle)
+My Pascal Triangle [![Build Status](https://travis-ci.org/helmedeiros/pascalTriangle.png?branch=fixingErrors)](https://travis-ci.org/helmedeiros/pascalTriangle) [![Coverage Status](https://coveralls.io/repos/helmedeiros/pascalTriangle/badge.png?branch=master)](https://coveralls.io/r/helmedeiros/pascalTriangle?branch=master)
 ==============
 
 My pascal triangle implementation.
+
+In mathematics, Pascal's triangle is a triangular array of the binomial coefficients. It is named after the French mathematician Blaise Pascal in much of the Western world, although other mathematicians studied it centuries before him in India, Greece, Iran, China, Germany, and Italy.[1]
+The rows of Pascal's triangle are conventionally enumerated starting with row n = 0 at the top. The entries in each row are numbered from the left beginning with k = 0 and are usually staggered relative to the numbers in the adjacent rows. A simple construction of the triangle proceeds in the following manner. On row 0, write only the number 1. Then, to construct the elements of following rows, add the number above and to the left with the number above and to the right to find the new value. If either the number to the right or left is not present, substitute a zero in its place. For example, the first number in the first row is 0 + 1 = 1, whereas the numbers 1 and 3 in the third row are added to produce the number 4 in the fourth row.

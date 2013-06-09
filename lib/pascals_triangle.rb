@@ -26,7 +26,7 @@ class PascalsTriangle
   end
   
   def limit(upper_bound)
-      enum_for(:each, upper_bound)
-    end
+    enum_for(:each, upper_bound)
+  end
   
 end
