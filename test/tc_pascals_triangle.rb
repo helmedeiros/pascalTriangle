@@ -53,4 +53,8 @@ END_OUTPUT
               [1, 5, 10, 10, 5, 1 ], 
               @tri.find { |row| row.any? { |n| n > 9 }  })
       end
+      
+      def test_limit
+             assert_equal(@rows, @tri.limit(10).to_a)
+           end
     end
